@@ -1,5 +1,6 @@
 import type { Question, TopicId } from "@/lib/types";
 import { alcoholDrugsDistractedQuestions } from "./alcohol-drugs-distracted";
+import { expansion100Questions } from "./expansion-100";
 import { rulesOfTheRoadQuestions } from "./rules-of-the-road";
 import { safeDrivingQuestions } from "./safe-driving";
 import { sharingTheRoadQuestions } from "./sharing-the-road";
@@ -15,6 +16,7 @@ export const ALL_QUESTIONS: Question[] = [
   ...specialSituationsQuestions,
   ...vehicleEquipmentQuestions,
   ...alcoholDrugsDistractedQuestions,
+  ...expansion100Questions,
 ];
 
 const byId = new Map(ALL_QUESTIONS.map((q) => [q.id, q]));
